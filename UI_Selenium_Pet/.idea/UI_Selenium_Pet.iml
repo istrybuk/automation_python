@@ -6,7 +6,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Python_Homework" />
-    <orderEntry type="module" module-name="Selenium_UI_Pet" />
   </component>
 </module>
