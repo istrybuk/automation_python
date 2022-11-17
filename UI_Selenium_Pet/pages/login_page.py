@@ -4,7 +4,7 @@ from .locators import LoginPageLocators
 
 class LoginPage(BasePage):
     def go_to_login(self):
-        login_email =  self.browser.find_element(*LoginPageLocators.LOGIN_EMAIL)
+        login_email = self.browser.find_element(*LoginPageLocators.LOGIN_EMAIL)
         login_email.send_keys('Sivan@bk.by')
 
     def go_to_password(self):

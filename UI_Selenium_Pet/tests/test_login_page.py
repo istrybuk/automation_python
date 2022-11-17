@@ -1,4 +1,4 @@
-from .pages.login_page import LoginPage
+from pages.login_page import LoginPage
 
 
 def test_go_to_login(browser):
@@ -9,4 +9,3 @@ def test_go_to_login(browser):
     page.go_to_password()
     page.click_to_btn()
 
-    browser.save_screenshot('full_login.png')

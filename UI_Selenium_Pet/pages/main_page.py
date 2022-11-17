@@ -1,6 +1,6 @@
-from selenium.webdriver.common.by import By
-from .locators import MainPageLocators
 from .base_page import BasePage
+from .locators import MainPageLocators
+from selenium.webdriver.common.keys import Keys
 
 
 class MainPage(BasePage):
@@ -8,14 +8,17 @@ class MainPage(BasePage):
         login_link = self.browser.find_element(*MainPageLocators.LOGIN_LINK)
         login_link.click()
 
+    def go_to_register_page(self):
+        self.browser.find_element(*MainPageLocators.REGISTER_LINK).click()
 
-class RegisterPage(BasePage):
-    pass
+    def select_dropdown(self):
+        self.browser.find_element(*MainPageLocators.DROPDOWN_LINK).click()
+        self.browser.find_element(*MainPageLocators.DROPDOWN_VALUE).click()
 
+    """ чем можно заменить + Keys.ENTER ?"""
 
-class DropDown(BasePage):
-    pass
+    def filter_usage(self):
+        self.browser.find_element(*MainPageLocators.FILTER_LINK).send_keys('Duff' + Keys.ENTER)
 
-
-class FilterInput(BasePage):
-    pass
+    def paginator(self):
+        pass
