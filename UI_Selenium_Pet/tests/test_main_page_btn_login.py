@@ -2,6 +2,7 @@ import pytest
 import time
 from pages.main_page import MainPage
 from pages.config import *
+from tests.test_page_login import test_page_login  # Для аутентификации на сайте
 
 
 @pytest.mark.main
@@ -24,6 +25,7 @@ def test_registration_button_on_page(browser):
     page.go_to_register_page()
 
 
+@pytest.mark.main
 def test_dropdown_on_page(browser):
     """Выпадающий список на главной странице"""
     page = MainPage(browser, ValidDataConfig.MAIN_PAGE_LINK)
@@ -31,6 +33,7 @@ def test_dropdown_on_page(browser):
     page.select_dropdown()
 
 
+@pytest.mark.main
 def test_filter_on_page(browser):
     """Фильтр на главной странице"""
     page = MainPage(browser, ValidDataConfig.MAIN_PAGE_LINK)
@@ -38,6 +41,7 @@ def test_filter_on_page(browser):
     page.filter_usage()
 
 
+@pytest.mark.main
 def test_end_and_beginning_page(browser):
     """Кнопки страниц начала и конец"""
     page = MainPage(browser, ValidDataConfig.MAIN_PAGE_LINK)
@@ -46,6 +50,7 @@ def test_end_and_beginning_page(browser):
     page.go_to_paginator_beginning_pages()
 
 
+@pytest.mark.main
 def test_paginator_full_check(browser):
     """Следящая страница, в конец, прошлая страница, в начало"""
     page = MainPage(browser, ValidDataConfig.MAIN_PAGE_LINK)
@@ -56,6 +61,7 @@ def test_paginator_full_check(browser):
     page.go_to_paginator_beginning_pages()
 
 
+@pytest.mark.main
 def test_next_and_previous_page(browser):
     """Кнопки страниц следующая и предыдущая"""
     page = MainPage(browser, ValidDataConfig.MAIN_PAGE_LINK)
@@ -64,8 +70,10 @@ def test_next_and_previous_page(browser):
     page.go_to_paginator_previous_pages()
 
 
+@pytest.mark.main
 def test_paginator_click_pages(browser):
-    """Выбор рандомной страны"""
+    """Аутентификации на сайте и выбор рандомной страны"""
+    test_page_login(browser)  # Аутентификации на сайте
     page = MainPage(browser, ValidDataConfig.MAIN_PAGE_LINK)
     page.open()
     page.paginator_random_click_pages()

@@ -4,6 +4,7 @@ from pages.main_page import MainPage
 from pages.reg_page import RegPage
 
 
+@pytest.mark.reg
 @pytest.mark.regression
 def test_page_register(browser):
     """Регистрация нового пользователя,
@@ -13,9 +14,10 @@ def test_page_register(browser):
     page.go_to_reg_login()
     page.go_to_reg_password()
     page.go_to_reg_password_cfm()
-    # page.submit_to_reg_btn()
+    # page.submit_to_reg_btn()  # Добавить удаление созданного пользователя
 
 
+@pytest.mark.reg
 @pytest.mark.xfail(reason='Негативный тест, неверно указано подтверждение пароля.')
 def test_go_main_page_to_register_page(browser):
     """Пользователь заходит на главную страницу,

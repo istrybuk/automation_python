@@ -15,6 +15,7 @@ def test_page_login(browser):
     page.click_to_btn()
 
 
+@pytest.mark.regression
 def test_go_main_page_to_login_page(browser):
     """Пользователь заходит на главную страницу,
     нажимает кнопку логин и вводит свои данные"""
