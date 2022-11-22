@@ -25,3 +25,8 @@
 
 
 * <small>профиль на [linkedin](https://www.linkedin.com/in/ivan-strybuk/)</small>
+
+
+
+---
+<small>[К оглавлению](https://github.com/istrybuk/automation_python/blob/main/README.md#проекты)</small>
