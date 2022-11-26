@@ -19,7 +19,7 @@
         * [test_reg_page_register.py](https://github.com/istrybuk/automation_python/blob/main/UI_Selenium_Pet/tests/test_reg_page_register.py) - Тестирование страницы Registration page
         * [test_two_parameters.py](https://github.com/istrybuk/automation_python/blob/main/UI_Selenium_Pet/tests/test_two_parameters.py) - Пример передачи в функции двух параметров.
      * [Log](https://github.com/istrybuk/automation_python/blob/main/UI_Selenium_Pet/pytest%20session.PNG) - Cкриншот логов
-* [Checklist_swaggerv](https://github.com/istrybuk/automation_python/tree/main/Checklist_swagger) - Примеры чек листа, описания методов, user story для тестирования методов в Swagger UI 
+* [Checklist_swagger](https://github.com/istrybuk/automation_python/tree/main/Checklist_swagger) - Примеры чек листа, описания методов, user story для тестирования методов в Swagger UI 
 ---
 ###### Links:
 
