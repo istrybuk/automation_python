@@ -1,1 +1,1 @@
-`Checklist_swagger_ui.xlsx` - Примеры чек листа, описания методов, user story для тестирования Swagger UI
+`Checklist_swagger_ui.xlsx` - Excel документ с описанием методов, user story и чек лист для тестирования Swagger UI
